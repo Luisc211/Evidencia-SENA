@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1FBA4B;
+    color: white;
+    padding: 10px 20px;
+}
+
+.rectangulo, .rectangulo2 {
+    margin-top: 20px;
+    width: 90vw;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rectangulo2 {
+    background-color: #1FBA4B;
+    border-color: #1FBA4B;
+}
+
+.rectangulo p, .rectangulo2 p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.rectangulo2 p {
+    color: white;
+}
+
+.rectangulo button {
+    padding: 10px 20px;
+    background-color: #1FBA4B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rectangulo button:hover {
+    color: #26813F;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+#horarios-disponibles {
+    padding: 20px;
+}
+
+footer {
+    background-color: #1FBA4B;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .rectangulo, .rectangulo2 {
+        width: 95vw;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rectangulo button, .rectangulo2 button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #horarios-disponibles {
+        padding-bottom: 60px; 
+    }
+
+    footer {
+        flex-direction: column;
+        position: relative; 
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    .rectangulo, .rectangulo2 {
+        padding: 15px;
+    }
+
+    .rectangulo p, .rectangulo2 p {
+        font-size: 14px;
+    }
+
+    .rectangulo button, .rectangulo2 button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    nav ul {
+        padding: 5px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #horarios-disponibles {
+        padding-bottom: 60px; 
+    }
+
+    footer {
+        padding: 5px;
+        position: relative; 
+        bottom: 0;
+        width: 100%;
+    }
+}
